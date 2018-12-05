@@ -47,15 +47,14 @@ describe Day1 do
     end
   end
 
-
-  # describe '#first_repeat_find' do 
-  #   it 'works on real data' do 
-  #     day_1 = Day1.new
-  #     day_1.load_data 
-  #     day_1.calc_duplicate_frequency
-  #     expect(day_1.duplicate_frequency).to eq(0)
-  #   end
-  # end
+  describe '#first_repeat_find', focus: true do 
+    it 'works on real data' do 
+      day_1 = Day1.new
+      day_1.load_data 
+      day_1.calc_duplicate_frequency
+      expect(day_1.duplicate_frequency).to eq(0)
+    end
+  end
 
   describe '#check_repeat_frequency' do 
     it 'Check for duplicated frequencies' do

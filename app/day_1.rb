@@ -21,6 +21,7 @@ class Day1
     freq_changes.cycle do |direction|
       self.total_frequency = self.total_frequency.send(direction[0], direction[1])
       self.freq_history << self.total_frequency 
+      puts self.total_frequency
       if repeat_frequency? && !self.duplicate_frequency
         self.duplicate_frequency = self.total_frequency
         break
